@@ -9,13 +9,12 @@
 import Foundation
 
 public class AMUtil:NSObject {
-    public static let sharedUtil = AMUtil()
-    
+
     private override init(){
         
     }
     
-    func loadJsonFromUrl(urlString:String, success:(json:AnyObject)->()){
+    class func loadJsonFromUrl(urlString:String, success:(json:AnyObject)->()){
         NSOperationQueue().addOperationWithBlock { () -> Void in
             if let url = NSURL(string: urlString) {
                 if let data = NSData(contentsOfURL: url) {

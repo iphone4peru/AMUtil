@@ -94,7 +94,6 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 
 SWIFT_CLASS("_TtC6AMUtil6AMUtil")
 @interface AMUtil : NSObject
-+ (AMUtil * __nonnull)sharedUtil;
 @end
 
 #pragma clang diagnostic pop
