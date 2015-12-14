@@ -8,10 +8,11 @@ Pod::Spec.new do |s|
   	s.source 			= {:git => 'https://github.com/iphone4peru/AMUtil.git', :tag => s.version.to_s}
   	s.framework 			= 'UIKit', 'Foundation'
 	
-	s.source_files			= 'project/*.swift'
-  	
+	#s.source_files			= 'project/*.swift'
+  	s.ios.vendored_frameworks	= 'project/AMUtil.framework'
+
 	s.ios.deployment_target 	= '8.0'
   	s.requires_arc 			= true
-	#s.ios.vendored_frameworks	= 'project/AMUtil.framework'
+	
 
 end

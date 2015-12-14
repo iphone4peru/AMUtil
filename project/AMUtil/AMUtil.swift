@@ -15,8 +15,8 @@ public class AMUtil:NSObject {
         
     }
     
-    public class func loadJsonFromUrl(urlString:String, success:(json:AnyObject)->()){
-        AMUtil.loadDataFromUrl(urlString) { (data) -> () in
+    public class func loadJsonFromUrl(urlString:String, success:(json:AnyObject)->(), failure:()->()){
+        AMUtil.loadDataFromUrl(urlString, success: { (data) -> () in
             do {
                 let json = try NSJSONSerialization.JSONObjectWithData(data, options: [])
                 NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
@@ -24,21 +24,29 @@ public class AMUtil:NSObject {
                 })
             }catch{
                 print("falló el parse del json")
+                failure()
             }
+            }) { () -> () in
+                failure()
         }
+        
+        
     }
     
-    public class func loadImageFromURl(urlString:String, toImage:UIImageView){
-        AMUtil.loadDataFromUrl(urlString) { (data) -> () in
+    public class func loadImageFromURl(urlString:String, toImage:UIImageView, failure:()->()){
+        AMUtil.loadDataFromUrl(urlString, success: { (data) -> () in
             if let image = UIImage(data: data){
                 toImage.image = image
             }else{
                 print("no se pudo crear la imagen")
+                failure()
             }
+            }) { () -> () in
+                failure()
         }
     }
     
-    class func loadDataFromUrl(urlString:String, success:(data:NSData)->()) {
+    class func loadDataFromUrl(urlString:String, success:(data:NSData)->(), failure:()->()) {
         NSOperationQueue().addOperationWithBlock { () -> Void in
             if let url = NSURL(string: urlString) {
                 if let data = NSData(contentsOfURL: url) {
@@ -47,9 +55,15 @@ public class AMUtil:NSObject {
                     })
                 }else{
                     print("falló obtención de la data")
+                    NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
+                        failure()
+                    })
                 }
             }else{
                 print("falló creacion de url")
+                NSOperationQueue.mainQueue().addOperationWithBlock({ () -> Void in
+                    failure()
+                })
             }
         }
     }
