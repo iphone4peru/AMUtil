@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
 
   	s.ios.deployment_target 	= '8.0'
   	s.requires_arc 			= true
-	s.ios.vendored_frameworks	= 'project/AMUtil.framework'
+	s.ios.vendored_framework	= 'project/AMUtil.framework'
 	s.frameworks             	= 'Foundation', 'UIKit'
 
 end
