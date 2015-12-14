@@ -1,0 +1,10 @@
+framework module AMUtil {
+  umbrella header "AMUtil.h"
+
+  export *
+  module * { export * }
+}
+
+module AMUtil.Swift {
+    header "AMUtil-Swift.h"
+}
