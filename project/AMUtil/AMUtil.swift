@@ -14,7 +14,7 @@ public class AMUtil:NSObject {
         
     }
     
-    class func loadJsonFromUrl(urlString:String, success:(json:AnyObject)->()){
+    public class func loadJsonFromUrl(urlString:String, success:(json:AnyObject)->()){
         NSOperationQueue().addOperationWithBlock { () -> Void in
             if let url = NSURL(string: urlString) {
                 if let data = NSData(contentsOfURL: url) {

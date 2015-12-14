@@ -351,6 +351,7 @@
 				4787F2591C1E62A600C05C09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4787F25B1C1E62D000C05C09 /* Build configuration list for PBXAggregateTarget "Universal Framework" */ = {
 			isa = XCConfigurationList;
@@ -359,6 +360,7 @@
 				4787F25D1C1E62D000C05C09 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

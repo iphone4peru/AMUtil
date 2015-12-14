@@ -94,6 +94,7 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 
 SWIFT_CLASS("_TtC6AMUtil6AMUtil")
 @interface AMUtil : NSObject
++ (void)loadJsonFromUrl:(NSString * __nonnull)urlString success:(void (^ __nonnull)(id __nonnull))success;
 @end
 
 #pragma clang diagnostic pop
