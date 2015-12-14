@@ -91,10 +91,12 @@ typedef int swift_int4  __attribute__((__ext_vector_type__(4)));
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
+@class UIImageView;
 
 SWIFT_CLASS("_TtC6AMUtil6AMUtil")
 @interface AMUtil : NSObject
 + (void)loadJsonFromUrl:(NSString * __nonnull)urlString success:(void (^ __nonnull)(id __nonnull))success;
++ (void)loadImageFromURl:(NSString * __nonnull)urlString toImage:(UIImageView * __nonnull)toImage;
 @end
 
 #pragma clang diagnostic pop
