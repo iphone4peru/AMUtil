@@ -4,6 +4,42 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Frameworks/libswiftContacts.dylib</key>
+		<data>
+		7d0exPtf046Q8og9jXX+2d8ILEc=
+		</data>
+		<key>Frameworks/libswiftCore.dylib</key>
+		<data>
+		vZNwNIKa/qt4wN3o03b9svYMJE4=
+		</data>
+		<key>Frameworks/libswiftCoreGraphics.dylib</key>
+		<data>
+		EnCtiHJTBX4/XN52zPpiiCOGlGI=
+		</data>
+		<key>Frameworks/libswiftCoreImage.dylib</key>
+		<data>
+		CI5ejoDITO/dWqWCiXTP1VQ5Ksc=
+		</data>
+		<key>Frameworks/libswiftDarwin.dylib</key>
+		<data>
+		Et6fvlyIEpJX9iqwWkoEy90j2OY=
+		</data>
+		<key>Frameworks/libswiftDispatch.dylib</key>
+		<data>
+		RDUqM+ZZo/u6CZ8ovt/5EtzQhlE=
+		</data>
+		<key>Frameworks/libswiftFoundation.dylib</key>
+		<data>
+		QDCgR6cXoowRmVOPSC6sb2Z7pf0=
+		</data>
+		<key>Frameworks/libswiftObjectiveC.dylib</key>
+		<data>
+		w0S2al6X9G9bsvwaCmkc0Idu5V4=
+		</data>
+		<key>Frameworks/libswiftUIKit.dylib</key>
+		<data>
+		Sbv8MZ8N53dbGOMaut+3MSGuxvQ=
+		</data>
 		<key>Headers/AMUtil-Swift.h</key>
 		<data>
 		15OxXKCr792Bt0OH3ZCXd9wQXf8=
@@ -39,6 +75,42 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Frameworks/libswiftContacts.dylib</key>
+		<data>
+		7d0exPtf046Q8og9jXX+2d8ILEc=
+		</data>
+		<key>Frameworks/libswiftCore.dylib</key>
+		<data>
+		vZNwNIKa/qt4wN3o03b9svYMJE4=
+		</data>
+		<key>Frameworks/libswiftCoreGraphics.dylib</key>
+		<data>
+		EnCtiHJTBX4/XN52zPpiiCOGlGI=
+		</data>
+		<key>Frameworks/libswiftCoreImage.dylib</key>
+		<data>
+		CI5ejoDITO/dWqWCiXTP1VQ5Ksc=
+		</data>
+		<key>Frameworks/libswiftDarwin.dylib</key>
+		<data>
+		Et6fvlyIEpJX9iqwWkoEy90j2OY=
+		</data>
+		<key>Frameworks/libswiftDispatch.dylib</key>
+		<data>
+		RDUqM+ZZo/u6CZ8ovt/5EtzQhlE=
+		</data>
+		<key>Frameworks/libswiftFoundation.dylib</key>
+		<data>
+		QDCgR6cXoowRmVOPSC6sb2Z7pf0=
+		</data>
+		<key>Frameworks/libswiftObjectiveC.dylib</key>
+		<data>
+		w0S2al6X9G9bsvwaCmkc0Idu5V4=
+		</data>
+		<key>Frameworks/libswiftUIKit.dylib</key>
+		<data>
+		Sbv8MZ8N53dbGOMaut+3MSGuxvQ=
+		</data>
 		<key>Headers/AMUtil-Swift.h</key>
 		<data>
 		15OxXKCr792Bt0OH3ZCXd9wQXf8=
