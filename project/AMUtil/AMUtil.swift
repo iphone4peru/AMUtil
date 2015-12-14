@@ -8,10 +8,12 @@
 
 import Foundation
 
-public class AMUtil {
+public class AMUtil:NSObject {
     public static let sharedUtil = AMUtil()
     
-    private init(){}
+    private override init(){
+        
+    }
     
     func loadJsonFromUrl(urlString:String, success:(json:AnyObject)->()){
         NSOperationQueue().addOperationWithBlock { () -> Void in
